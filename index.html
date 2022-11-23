@@ -1,0 +1,46 @@
+ !DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dialog id="dialog">
+        <form method="dialog" id="image-container">
+            <div class="slot">
+                <section class="slot--head">
+                   <ion-icon name="person-circle-outline"></ion-icon>
+                    <p>New User</p>
+                    <button class="slot--head-close_dialog">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </button>
+                </section>
+                <section class="slot--body">
+                    <div class="slot--body--file">
+                        <label for="userimage">upload an image</label>
+                        <input id="userimage" type="file" accept=".jpg,.jpeg,pnp" name="userimage">
+                    </div>
+                    <p class="slot--body--max_upload"* Maximum upload 1mb></p>
+                </section>
+                <section class="slot--footer">
+                    <button class="slot--footer-clear_button">clear</button>
+                    <div class="slot--footer-menu">
+                        <button type="submit" class="slot--footer-cancel_button">cancel</button>
+                        <button type="submit" id="confirm_button" class="slot--footer-confirm _button">confirm</button>
+                    </div>
+                </section>
+            </div>
+
+        </form>
+    </dialog>
+    <button id="add_new_avatar" type="button" class="avatar-button avatar_button_add new">+</button></br>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script module src="https://unpkg.com/ioniocons@5.5.2/distionicons.js"></script>
+  
+</body>
+</html>

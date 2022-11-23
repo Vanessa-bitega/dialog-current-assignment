@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    color-scheme: dark light;
+}
+body{
+    background-color: rgb(26, 18, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+dialog::backdrop{
+    backdrop-filter: blur(10px); 
+    background-color: #495057;
+}
+.avatar-img{
+    width:118px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 30%;
+    position: relative;
+}
+.avatar-img-btn{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+    position: relative;
+    left:-27px;
+}
+.close-avatar-icon{
+    font-size: 28px;
+    position: absolute;
+    left: 85%;
+    border: 1px solid #495057;
+    border-radius: 50%;
+    background-color: #495057;
+}
+.add-svg{
+    font-size: 4rem;
+    width: 48px;
+}
+.avatar-button{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px  solid #495057;
+    position: relative;
+    background-color: #495057;
+    font-size: 51px;
+}
+.avatar-button_add-new{
+    cursor: pointer;
+    font-size: 48px;
+    font-weight: 50;
+}
+.slot{
+    border-radius: 10px;
+}
+.slot--head {
+    color: #F1F3F5;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    background: #212529;
+    padding: 16px 24px;
+}
+
+.slot--head-close_dialog {
+    background-color: transparent;
+    border: none;
+    color: #606264;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.slot--head-close_dialog ion-icon {
+    position: relative;
+    top: 8px;
+}
+
+#dialog {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 5px 9px 0px black;
+    border-radius: 12px;
+    min-height: 200px;
+    min-width: 268px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.slot--body {
+    background: #495057;
+    color: #F1F3F5;
+    padding: 16px 24px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+.slot--body--file {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 15px;
+}
+
+#userimage {
+    background-color: #171A1C;
+    font-size: 1rem;
+}
+
+
+.slot--footer {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+}
+
+.slot--footer button {
+    cursor: pointer;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding: 6px 16px;
+}
+
+.slot--footer-clear_button {
+    background-color: #212529;
+    color: #FFC9C9;
+    border-color: #495057;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.slot--footer-cancel_button {
+    
+    background-color: #323436;
+    /* border-color: #677889; */
+    border-style: solid;
+    border-radius: -1px;
+    color: #F1F3F5;
+    /* font-weight: bold; */
+    width: 86px;
+    height: 36px;
+     box-sizing: border-box;
+}
+
+.slot--footer-confirm_button {
+    background-color: #212529;
+    border-color: #495057;
+    border-style: solid;
+    border-radius: 5px;
+    color:#171A1C;
+    font-weight: bold;
+    width: 68px;
+    height: 31px;
+}
